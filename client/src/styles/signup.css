@@ -1,0 +1,105 @@
+:root {
+  --bg--color: rgb(239, 210, 210);
+  --hero--font: Arial, Helvetica, sans-serif;
+  --blue--color: rgb(57, 57, 238);
+  --mono--space: monospace;
+  --white--color: white;
+  --black--color: black;
+}
+
+section > .signup {
+  background-color: var(--white--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 110vh;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(197, 4, 4, 0.35) 0px 5px 15px;
+}
+
+section > .signup > img {
+  height: 31rem;
+  width: auto;
+}
+
+section > .signup > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+section > .signup > form > h1 {
+  font-family: var(--hero--font);
+  color: var(--blue--color);
+}
+
+section > .signup > form > input {
+  padding: 0.6rem;
+  width: 20rem;
+  height: 1.5rem;
+}
+
+section > .signup > form > input[type="submit"] {
+  font-family: var(--mono--space);
+  letter-spacing: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--blue--color);
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid var(--blue--color);
+  color: var(--bg--color);
+  width: auto;
+}
+
+section > .signup > form > input[type="submit"]:hover {
+  background-color: transparent;
+  border: 1px solid var(--blue--color);
+  color: var(--black--color);
+}
+
+section > .signup > form > p {
+  font-family: var(--hero--font);
+  color: var(--blue--color);
+}
+
+section > .signup > form > a {
+  font-family: var(--mono--space);
+  text-decoration: none;
+  color: var(--blue--color);
+}
+
+span {
+  font-family: var(--mono--space);
+  color: red;
+}
+
+.swal-title {
+  font-family: var(--hero--font);
+  color: var(--blue--color);
+}
+
+.swal-text {
+  font-family: var(--mono--space);
+  color: var(--blue--color);
+}
+
+#topBtn {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  border: 1px solid var(--blue--color);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--black--color);
+  font-family: var(--mono--space);
+  letter-spacing: 3px;
+  border-radius: 3px;
+}
+
+#topBtn:hover {
+  background-color: var(--blue--color);
+  color: var(--white--color);
+}

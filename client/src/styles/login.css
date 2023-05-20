@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg--color: rgb(239, 210, 210);
+  --hero--font: Arial, Helvetica, sans-serif;
+  --blue--color: rgb(57, 57, 238);
+  --mono--space: monospace;
+  --white--color: white;
+  --black--color: black;
+}
+
+section {
+  background-color: var(--bg--color);
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section > .login {
+  background-color: var(--white--color);
+  display: flex;
+  width: 50%;
+  height: 60%;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
+
+section > .login > form > h1 {
+  text-align: left;
+  font-family: var(--hero--font);
+  display: flex;
+  flex-direction: row-reverse;
+  color: var(--blue--color);
+  padding: 1rem;
+}
+
+section > .login > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+section > .login > form > p {
+  font-family: var(--hero--font);
+}
+
+section > .login > form > a {
+  text-decoration: none;
+  font-family: var(--mono--space);
+  border: 1px solid var(--blue--color);
+  color: var(--black--color);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+section > .login > form > a:hover {
+  background-color: var(--blue--color);
+  color: var(--bg--color);
+}
+
+section > .login > form > input {
+  padding: 0.8rem;
+  width: 10rem;
+  height: 1rem;
+  border: 1px solid var(--blue--color);
+  border-radius: 4px;
+}
+
+section > .login > form > input[type="submit"] {
+  background-color: var(--blue--color);
+  color: var(--white--color);
+  font-family: var(--mono--space);
+  letter-spacing: 3px;
+  cursor: pointer;
+  height: 2rem;
+  padding: 8px;
+  border: none;
+}
+
+section > .login > form > input[type="submit"]:hover {
+  border: 1px solid var(--blue--color);
+  background-color: transparent;
+  color: var(--blue--color);
+}

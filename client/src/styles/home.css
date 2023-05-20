@@ -1,0 +1,78 @@
+:root {
+  --bg--color: rgb(239, 210, 210);
+  --hero--font: Arial, Helvetica, sans-serif;
+  --blue--color: rgb(57, 57, 238);
+  --mono--space: monospace;
+}
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg--color);
+}
+
+.homepage > .hero > h1 {
+  text-align: center;
+  font-family: var(--hero--font);
+  font-size: 4rem;
+  color: var(--blue--color);
+}
+
+.homepage > .hero > p {
+  font-family: var(--mono--space);
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--blue--color);
+}
+
+.buttonContainer > button {
+  padding: 0.9rem;
+  margin: 1rem;
+  background-color: var(--blue--color);
+  color: var(--bg--color);
+  border: 1px solid var(--blue--color);
+  font-family: var(--mono--space);
+  cursor: pointer;
+}
+
+.buttonContainer > button:hover {
+  background-color: blue;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer > #readmore {
+  background-color: transparent;
+  border-radius: 2px;
+  color: black;
+}
+
+.buttonContainer > #readmore:hover {
+  background-color: var(--blue--color);
+  border-radius: 2px;
+  color: var(--bg--color);
+}
+
+#logoutBtn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  border: 1px solid blue;
+  padding: 1.3rem;
+  font-family: var(--mono--space);
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  color: black;
+}
+
+#logoutBtn:hover {
+  background-color: var(--blue--color);
+  border: 1px solid var(--blue--color);
+  color: var(--bg--color);
+}
